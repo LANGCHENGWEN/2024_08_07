@@ -20,7 +20,7 @@ from pprint import pprint
 
 chat_history = dict()
 
-def chat_with_chatgpt(user_id, user_message, openai_api_key):
+def chat_with_chatgpt(user_id, user_message, openai_api_key,extra_prompt=""):
     # 利用OpenAI類別，建立一個可以跟OpenAI伺服器互動的物件
     client = OpenAI(api_key=openai_api_key)
 
